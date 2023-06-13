@@ -3,6 +3,9 @@ FROM minio/mc
 # Set the working directory
 WORKDIR /app
 
+RUN microdnf install findutils \
+    && microdnf clean all
+
 # Copy the bash script into the container
 COPY s3-uploader.sh .
 
