@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  s3-uploader:
+    build: .
+    environment:
+      - S3_ENDPOINT=https://your-s3-endpoint
+      - S3_ACCESS_KEY=your-s3-access-key
+      - S3_SECRET_KEY=your-s3-secret-key
+      - DESTINATION_BUCKET=your-bucket
+      - DESTINATION_DIRECTORY=/videos
+    volumes:
+      - /path/to/local/folder:/toUpload
+    command: "keyword-of-the-filename"
