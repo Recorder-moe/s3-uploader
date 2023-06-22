@@ -19,7 +19,7 @@ ENV S3_SECRET_KEY=""
 ENV DESTINATION_BUCKET=""
 ENV DESTINATION_DIRECTORY=""
 
-VOLUME [ "/toUpload" ]
+VOLUME [ "/sharedvolume" ]
 
 # Execute the script with provided settings
 ENTRYPOINT ["./s3-uploader.sh"]

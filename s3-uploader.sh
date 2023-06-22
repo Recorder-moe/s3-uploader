@@ -43,7 +43,7 @@ fi
 mc alias set mys3 "$S3_ENDPOINT" "$S3_ACCESS_KEY" "$S3_SECRET_KEY"
 
 # Find files matching the search filter and store them in a temporary file
-find "/toUpload" -name "*$SEARCH_FILTER*.mp4" >temp.txt
+find "/sharedvolume" -name "*$SEARCH_FILTER*.mp4" >temp.txt
 
 # Check if any matching files were found
 if [ ! -s "temp.txt" ]; then

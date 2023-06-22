@@ -10,5 +10,5 @@ services:
       - DESTINATION_BUCKET=your-bucket
       - DESTINATION_DIRECTORY=/videos
     volumes:
-      - /path/to/local/folder:/toUpload
+      - /path/to/local/folder:/sharedvolume
     command: "keyword-of-the-filename"
