@@ -29,7 +29,7 @@ This script automates the process of uploading *.mp4 files from a local folder t
    - `S3_ACCESS_KEY`: The access key for your S3-compatible storage.
    - `S3_SECRET_KEY`: The secret key for your S3-compatible storage.
    - `DESTINATION_BUCKET`: The name of the bucket in the S3-compatible storage where you want to upload the files.
-   - `DESTINATION_DIRECTORY`: The directory path within the destination bucket where you want to upload the files.
+   - `DESTINATION_DIRECTORY`: The directory path within the destination bucket where you want to upload the files. (No slash at the beginning or end)
 
 1. The script will upload the matching files to S3 Blob Storage and **delete them** from the local folder.
 

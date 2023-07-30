@@ -56,7 +56,7 @@ echo "Uploading files..."
 
 # Upload files matching the search filter to S3 storage using the MinIO Client (mc)
 while IFS= read -r file_path; do
-    mc cp "$file_path" "mys3/$DESTINATION_BUCKET/$DESTINATION_DIRECTORY"
+    mc cp "$file_path" "mys3/$DESTINATION_BUCKET/$DESTINATION_DIRECTORY/"
 done <temp.txt
 
 # Delete the uploaded files
