@@ -66,6 +66,6 @@ jobs:
           file: ./Dockerfile
           push: true
           target: final
-          tags: ${{ steps.setup.outputs.tags }}
-          labels: ${{ steps.setup.outputs.labels }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64
