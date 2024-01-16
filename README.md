@@ -1,6 +1,6 @@
 # S3 Blob Storage Uploader
 
-This script automates the process of uploading *.mp4 files from a local folder to S3 Blob Storage **and delete them** from the local folder. It utilizes the [MioIO Client(mc)](https://min.io/docs/minio/linux/reference/minio-mc.html) to perform the upload.
+This script automates the process of uploading *.mp4 files from a local folder to S3 Blob Storage **and delete them** from the local folder. It utilizes the [MinIO Client(mc)](https://min.io/docs/minio/linux/reference/minio-mc.html) to perform the upload.
 
 ## Getting Started
 
