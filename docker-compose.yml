@@ -1,8 +1,14 @@
-version: '3.4'
-
 services:
   s3-uploader:
-    build: .
+    build:
+      context: .
+      target: final
+      args:
+        - UID=1001
+      cache_from:
+        - ghcr.io/recorder-moe/s3-uploader:cache
+      cache_to:
+        - type=inline
     environment:
       - S3_ENDPOINT=https://your-s3-endpoint
       - S3_ACCESS_KEY=your-s3-access-key
