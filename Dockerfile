@@ -1,12 +1,12 @@
 # syntax=docker/dockerfile:1
 ARG UID=1001
-ARG VERSION=EDGE
+ARG VERSION=latest
 ARG RELEASE=0
 
 ########################################
 # Compress stage
 ########################################
-FROM minio/mc as mc
+FROM minio/mc:$VERSION as mc
 
 FROM alpine:3.19 as compress
 
